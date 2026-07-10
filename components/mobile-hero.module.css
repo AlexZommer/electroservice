@@ -67,7 +67,7 @@
   gap: 11px;
   max-width: 310px;
   color: rgba(255, 255, 255, 0.58);
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 600;
   line-height: 1.6;
   letter-spacing: 0.18em;
@@ -94,6 +94,9 @@
 
 .title span {
   display: block;
+  width: fit-content;
+  max-width: 100%;
+  padding-right: 0.14em;
   color: transparent;
   background: linear-gradient(110deg, #fff 5%, #7dbdff 52%, #257cff 100%);
   background-clip: text;
@@ -102,9 +105,9 @@
 
 .description {
   max-width: 34rem;
-  color: rgba(255, 255, 255, 0.62);
-  font-size: 1.0625rem;
-  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .actions {
