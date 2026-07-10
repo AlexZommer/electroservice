@@ -4,6 +4,7 @@ import { Header } from "@/components/header";
 import { Icon } from "@/components/icons";
 import Image from "next/image";
 import { PrincipleStats, Reveal } from "@/components/animated-content";
+import { MobileHero } from "@/components/mobile-hero";
 
 const services = [
   { icon: "bolt", n: "01", title: "Электромонтаж под ключ", text: "Проектирование, комплектация и монтаж электрики в квартире, доме или коммерческом помещении." },
@@ -43,11 +44,12 @@ export default function Home() {
     <main className="overflow-hidden">
       <Header />
 
-      <section className="hero-grid relative min-h-screen px-5 pt-32 sm:px-8 lg:px-12" id="top">
+      <section className="hero-grid relative min-h-screen sm:px-8 sm:pt-32 lg:px-12" id="top">
         <div className="hero-glow" />
         <div className="hero-aurora" aria-hidden="true" />
         <div className="hero-circuit" aria-hidden="true" />
-        <div className="hero-shell mx-auto flex min-h-[calc(100vh-8rem)] max-w-[1440px] flex-col justify-between">
+        <MobileHero />
+        <div className="mx-auto hidden min-h-[calc(100vh-8rem)] max-w-[1440px] flex-col justify-between sm:flex">
           <div className="hero-content relative z-10 max-w-6xl pt-[7vh]">
             <div className="eyebrow reveal"><span className="status-dot" /> Инженерные решения для частных и коммерческих пространств</div>
             <h1 className="hero-title mt-8 max-w-6xl text-[clamp(2.75rem,6.45vw,6.8rem)] font-medium leading-[.91] tracking-[-.065em]">
