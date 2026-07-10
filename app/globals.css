@@ -68,6 +68,16 @@ body { min-width: 320px; }
 .faq-answer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .35s ease; }.faq-answer.open { grid-template-rows: 1fr; }
 .faq-answer p { overflow: hidden; max-width: 670px; color: rgba(255,255,255,.45); font-size: 14px; line-height: 1.8; }.faq-answer.open p { padding-bottom: 1.75rem; }
 .contact-form { display: flex; flex-direction: column; gap: 1.5rem; padding: clamp(1.5rem,4vw,3rem); border: 1px solid rgba(255,255,255,.1); background: linear-gradient(145deg, rgba(255,255,255,.04), rgba(255,255,255,.015)); }
+.estimate-section { position: relative; border-block: 1px solid rgba(47,140,255,.15); background: radial-gradient(circle at 12% 50%, rgba(30,112,221,.16), transparent 32%), #070a0f; }
+.estimate-shell { position: relative; }
+.estimate-section .contact-form { border-radius: 24px; background: linear-gradient(145deg, rgba(26,52,86,.42), rgba(255,255,255,.025)); box-shadow: 0 30px 100px rgba(0,0,0,.25); }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+.honeypot { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+.contact-form button:disabled { cursor: wait; opacity: .7; }
+.button-spinner { width: 16px; height: 16px; border: 2px solid rgba(255,255,255,.35); border-top-color: white; border-radius: 50%; animation: spin .7s linear infinite; }
+.form-error { padding: .8rem 1rem; border: 1px solid rgba(248,113,113,.25); border-radius: 10px; background: rgba(127,29,29,.15); color: #fca5a5; font-size: 13px; line-height: 1.5; text-align: center; }
+.contact-success { min-height: 430px; align-items: center; justify-content: center; text-align: center; }
+.success-mark { display: grid; width: 68px; height: 68px; place-items: center; border-radius: 50%; background: #2f8cff; box-shadow: 0 0 50px rgba(47,140,255,.35); font-size: 28px; }.contact-success h3 { margin-top: 1.5rem; font-size: 28px; letter-spacing: -.03em; }.contact-success p { max-width: 340px; margin-top: .65rem; color: rgba(255,255,255,.48); line-height: 1.7; }
 .contact-form label { display: flex; flex-direction: column; gap: 9px; color: rgba(255,255,255,.5); font-size: 11px; text-transform: uppercase; letter-spacing: .12em; }
 .contact-form input, .contact-form select, .contact-form textarea { width: 100%; border: 0; border-bottom: 1px solid rgba(255,255,255,.13); border-radius: 0; outline: none; background: transparent; padding: 10px 0 13px; color: white; font-size: 15px; text-transform: none; letter-spacing: 0; resize: none; transition: border-color .2s; }
 .contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus { border-color: #2f8cff; }
@@ -88,5 +98,5 @@ body { min-width: 320px; }
 
 @media (max-width: 767px) { .gallery-grid { grid-template-columns: 1fr; grid-template-rows: none; }.gallery-card { min-height: 300px; aspect-ratio: 4 / 3; } }
 @media (min-width: 768px) and (max-width: 1023px) { .gallery-grid { grid-template-rows: repeat(2, 340px); } }
-@media (max-width: 639px) { .hero-grid { background-size: 44px 44px; }.service-card { min-height: 330px; }.project-card { min-height: 420px; padding: 1.5rem; }.tech-visual { max-width: 420px; }.review-card { min-height: 320px; }.trust-item { min-height: 92px; }.process-card { min-height: auto; }.eyebrow { line-height: 1.6; }.logo { font-size: 15px; }.logo-mark { width: 27px; height: 27px; margin-right: 7px; }.header-phone { font-size: 12px; padding: 9px 0; color: #71b3ff; }.button-primary, .button-secondary { width: 100%; justify-content: center; }.contact-phone { font-size: 1.8rem; } }
+@media (max-width: 639px) { .hero-grid { background-size: 44px 44px; }.service-card { min-height: 330px; }.project-card { min-height: 420px; padding: 1.5rem; }.tech-visual { max-width: 420px; }.review-card { min-height: 320px; }.trust-item { min-height: 92px; }.process-card { min-height: auto; }.eyebrow { line-height: 1.6; }.logo { font-size: 15px; }.logo-mark { width: 27px; height: 27px; margin-right: 7px; }.header-phone { font-size: 12px; padding: 9px 0; color: #71b3ff; }.button-primary, .button-secondary { width: 100%; justify-content: center; }.contact-phone { font-size: 1.8rem; }.form-grid { grid-template-columns: 1fr; }.estimate-section .contact-form { border-radius: 18px; }.contact-success { min-height: 350px; } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; } }

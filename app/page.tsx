@@ -70,6 +70,18 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="estimate-section px-5 py-20 sm:px-8 sm:py-24 lg:px-12" id="estimate">
+        <div className="estimate-shell mx-auto grid max-w-[1440px] gap-12 lg:grid-cols-[.85fr_1.15fr] lg:items-center">
+          <div>
+            <div className="section-tag">Предварительный расчёт</div>
+            <h2 className="mt-6 text-[clamp(2.5rem,4.8vw,4.8rem)] font-medium leading-[1.02] tracking-[-.055em]">Получите расчёт стоимости <span className="text-gradient">за 15 минут</span></h2>
+            <p className="mt-7 max-w-lg text-base leading-7 text-white/50 sm:text-lg">Ответим в Telegram, уточним детали и бесплатно рассчитаем стоимость.</p>
+            <div className="mt-9 flex items-center gap-3 text-sm text-white/40"><span className="status-dot" /> Без обязательств и скрытых условий</div>
+          </div>
+          <ContactForm />
+        </div>
+      </section>
+
       <section className="border-y border-white/10 bg-white/[.018] px-5 sm:px-8 lg:px-12" aria-label="Наши гарантии">
         <div className="mx-auto grid max-w-[1440px] sm:grid-cols-2 lg:grid-cols-5">
           {trust.map(([icon, label]) => <div className="trust-item" key={label}><Icon name={icon} /><span>{label}</span></div>)}
