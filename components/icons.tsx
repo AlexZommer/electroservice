@@ -6,7 +6,6 @@ export function Icon({ name }: { name: string }) {
   if (name === "home") return <svg {...common}><path d="m3 11 9-8 9 8v9a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1v-9Z"/></svg>;
   if (name === "telegram") return <svg {...common}><path d="m21 3-7.5 18-4.2-7.1L3 10.5 21 3Z"/><path d="m9.3 13.9 5-4.5"/></svg>;
   if (name === "phone") return <svg {...common}><path d="M6.6 3h3l1.5 4.2-2 1.4a15 15 0 0 0 6.3 6.3l1.4-2 4.2 1.5v3c0 2-1.6 3.6-3.6 3.5A15.5 15.5 0 0 1 3.1 6.6C3 4.6 4.6 3 6.6 3Z"/></svg>;
-  if (name === "max") return <svg {...common}><path d="M4 18V6l8 8 8-8v12"/></svg>;
   if (name === "contract") return <svg {...common}><path d="M6 3h9l3 3v15H6z"/><path d="M14 3v4h4M9 12h6M9 16h4"/></svg>;
   if (name === "shield") return <svg {...common}><path d="M12 3 4.5 6v5.5c0 4.6 3.2 7.8 7.5 9.5 4.3-1.7 7.5-4.9 7.5-9.5V6L12 3Z"/><path d="m9 12 2 2 4-5"/></svg>;
   if (name === "measure") return <svg {...common}><path d="m4 16 12-12 4 4L8 20H4v-4Z"/><path d="m13 7 4 4M10 10l2 2M7 13l2 2"/></svg>;

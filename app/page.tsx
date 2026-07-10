@@ -2,6 +2,7 @@ import { ContactForm } from "@/components/contact-form";
 import { FAQ } from "@/components/faq";
 import { Header } from "@/components/header";
 import { Icon } from "@/components/icons";
+import Image from "next/image";
 
 const trust = [
   ["contract", "Работаем по договору"],
@@ -27,6 +28,13 @@ const steps = [
   ["04", "Выполнение и сдача", "Выполняем монтаж, проверяем каждую линию и сдаём готовую систему с документацией."],
 ];
 
+const gallery = [
+  { src: "/images/electrical-panel.jpg", title: "Современный электрощит", text: "Точная сборка и понятная маркировка каждой линии." },
+  { src: "/images/electrical-wiring.jpg", title: "Аккуратная разводка", text: "Продуманные трассы и порядок на каждом этапе монтажа." },
+  { src: "/images/track-lighting.jpg", title: "Сценарии освещения", text: "Функциональный свет, интегрированный в архитектуру." },
+  { src: "/images/finished-interior.jpg", title: "Готовый интерьер", text: "Инженерные решения, которые не нарушают эстетику пространства." },
+];
+
 export default function Home() {
   return (
     <main className="overflow-hidden">
@@ -36,23 +44,29 @@ export default function Home() {
         <div className="hero-glow" />
         <div className="mx-auto flex min-h-[calc(100vh-8rem)] max-w-[1440px] flex-col justify-between">
           <div className="relative z-10 max-w-6xl pt-[7vh]">
-            <div className="eyebrow reveal"><span className="status-dot" /> Электрика для жизни и бизнеса</div>
+            <div className="eyebrow reveal"><span className="status-dot" /> Инженерные решения для частных и коммерческих пространств</div>
             <h1 className="reveal reveal-delay mt-8 max-w-6xl text-[clamp(3.25rem,7.6vw,8rem)] font-medium leading-[.91] tracking-[-.065em]">
-              Монтаж электрики<br /><span className="text-gradient">любой сложности</span>
+              Электрика, продуманная<br /><span className="text-gradient">до каждой детали</span>
             </h1>
             <p className="reveal reveal-delay-2 mt-8 max-w-2xl text-lg leading-relaxed text-white/55 sm:text-xl">
-              Квартиры, дома и коммерческие объекты. Выполняем электромонтаж под ключ, работаем по договору и даем гарантию на выполненные работы.
+              Проектируем и выполняем электромонтаж под ключ для квартир, домов и коммерческих объектов. Фиксируем условия в договоре и отвечаем за результат гарантией.
             </p>
             <div className="reveal reveal-delay-3 mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
               <a className="button-primary" href="#contact">Получить расчёт <Icon name="arrow" /></a>
               <a className="button-secondary" href="tel:+79964140502"><Icon name="phone" /> Позвонить</a>
-              <a className="button-secondary telegram-button" href="tel:+79964140502" title="Временно используется звонок по номеру"><Icon name="telegram" /> Написать в Telegram</a>
-              <span className="button-secondary max-button" role="link" aria-disabled="true" title="Прямая ссылка MAX будет добавлена после получения адреса"><Icon name="max" /> Написать в MAX</span>
+              <a className="button-secondary telegram-button" href="https://t.me/+79964140502" target="_blank" rel="noreferrer"><Icon name="telegram" /> Написать в Telegram</a>
             </div>
           </div>
           <div className="relative z-10 flex items-center gap-3 border-t border-white/10 py-7 text-xs uppercase tracking-[.16em] text-white/35">
             <span className="status-dot" /> Берём на себя весь электромонтаж — от замера до сдачи
           </div>
+        </div>
+      </section>
+
+      <section className="section pt-8" id="work">
+        <SectionIntro tag="Качество в деталях" title={<>Работа, которую<br /><span className="text-white/35">видно сразу.</span></>} aside="От инженерной части до финишного света — аккуратность остаётся нашим стандартом на каждом этапе." />
+        <div className="gallery-grid mx-auto mt-16 max-w-[1440px]">
+          {gallery.map((item, index) => <figure className={`gallery-card gallery-card-${index + 1}`} key={item.src}><Image src={item.src} alt={item.title} width={1600} height={1200} priority={index === 0} sizes="(max-width: 767px) 100vw, (max-width: 1023px) 50vw, 50vw" /><figcaption><h3>{item.title}</h3><p>{item.text}</p></figcaption></figure>)}
         </div>
       </section>
 
@@ -91,7 +105,7 @@ export default function Home() {
       <section className="section relative" id="contact">
         <div className="orb orb-right" />
         <div className="mx-auto grid max-w-[1440px] gap-14 lg:grid-cols-2">
-          <div><div className="section-tag">Расчёт стоимости</div><h2 className="section-title mt-6">Обсудим<br /><span className="text-gradient">ваш объект.</span></h2><p className="mt-8 max-w-lg text-lg leading-relaxed text-white/50">Оставьте заявку или свяжитесь удобным способом. Уточним задачу, ответим на вопросы и согласуем время бесплатного выезда на замер.</p><a className="contact-phone" href="tel:+79964140502">+7 (996) 414-05-02</a><div className="contact-actions"><a className="contact-action" href="tel:+79964140502"><Icon name="phone" /> Позвонить</a><a className="contact-action telegram-button" href="tel:+79964140502" title="Временно используется звонок по номеру"><Icon name="telegram" /> Telegram</a><span className="contact-action max-button" role="link" aria-disabled="true"><Icon name="max" /> MAX</span></div><p className="mt-3 text-xs text-white/35">Для связи в MAX: +7 (996) 414-05-02</p><div className="mt-10 border-l border-electric pl-5 text-sm leading-6 text-white/45">После заявки специалист свяжется с вами,<br />чтобы уточнить детали. Без навязчивых продаж.</div></div>
+          <div><div className="section-tag">Расчёт стоимости</div><h2 className="section-title mt-6">Бесплатно рассчитаем<br /><span className="text-gradient">стоимость работ.</span></h2><p className="mt-8 max-w-lg text-lg leading-relaxed text-white/50">Оставьте заявку или свяжитесь удобным способом. Уточним задачу и согласуем время бесплатного выезда на замер.</p><a className="contact-phone" href="tel:+79964140502">+7 (996) 414-05-02</a><div className="contact-actions"><a className="contact-action" href="tel:+79964140502"><Icon name="phone" /> Позвонить</a><a className="contact-action telegram-button" href="https://t.me/+79964140502" target="_blank" rel="noreferrer"><Icon name="telegram" /> Telegram</a></div><div className="mt-10 border-l border-electric pl-5 text-sm leading-6 text-white/45">Ответим на вопросы и подготовим предварительный расчёт.</div></div>
           <ContactForm />
         </div>
       </section>
