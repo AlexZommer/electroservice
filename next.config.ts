@@ -5,7 +5,11 @@ export default function nextConfig(phase: string): NextConfig {
   return {
     reactStrictMode: true,
     poweredByHeader: false,
-    // Dev and production builds must not overwrite each other's manifests.
-    distDir: phase === PHASE_DEVELOPMENT_SERVER ? ".next" : ".next-build",
+    output: "export",
+    images: {
+      unoptimized: true,
+    },
+    // Keep the dev cache separate and export production files for Cloudflare Pages.
+    distDir: phase === PHASE_DEVELOPMENT_SERVER ? ".next" : "out",
   };
 }
