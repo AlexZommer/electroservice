@@ -47,8 +47,8 @@ export default function Home() {
         <div className="hero-glow" />
         <div className="hero-aurora" aria-hidden="true" />
         <div className="hero-circuit" aria-hidden="true" />
-        <div className="mx-auto flex min-h-[calc(100vh-8rem)] max-w-[1440px] flex-col justify-between">
-          <div className="relative z-10 max-w-6xl pt-[7vh]">
+        <div className="hero-shell mx-auto flex min-h-[calc(100vh-8rem)] max-w-[1440px] flex-col justify-between">
+          <div className="hero-content relative z-10 max-w-6xl pt-[7vh]">
             <div className="eyebrow reveal"><span className="status-dot" /> Инженерные решения для частных и коммерческих пространств</div>
             <h1 className="hero-title mt-8 max-w-6xl text-[clamp(2.75rem,6.45vw,6.8rem)] font-medium leading-[.91] tracking-[-.065em]">
               Монтаж электрики<br /><span className="text-gradient">любой сложности</span>
@@ -62,7 +62,7 @@ export default function Home() {
               <a className="button-secondary telegram-button" href="https://t.me/+79964140502" target="_blank" rel="noreferrer"><Icon name="telegram" /> Написать в Telegram</a>
             </div>
           </div>
-          <div className="relative z-10 flex items-center gap-3 border-t border-white/10 py-7 text-xs uppercase tracking-[.16em] text-white/35">
+          <div className="hero-footer relative z-10 flex items-center gap-3 border-t border-white/10 py-7 text-xs uppercase tracking-[.16em] text-white/35">
             <span className="status-dot" /> Берём на себя весь электромонтаж — от замера до сдачи
           </div>
         </div>
