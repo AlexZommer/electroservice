@@ -98,9 +98,9 @@ export default function Home() {
       <section className="stats-section px-5 sm:px-8 lg:px-12"><Reveal className="mx-auto max-w-[1440px]"><PrincipleStats /></Reveal></section>
 
       <section className="section" id="work">
-        <Reveal><SectionIntro tag="Примеры решений" title={<>Качество,<br /><span className="text-white/35">которое видно.</span></>} aside="Временная подборка демонстрирует структуру будущего портфолио. Изображения легко заменить реальными фотографиями объектов." /></Reveal>
+        <Reveal><SectionIntro tag="Примеры решений" title={<>Качество,<br /><span className="text-white/35">которое видно.</span></>} /></Reveal>
         <div className="gallery-grid mx-auto mt-16 max-w-[1440px]">
-          {gallery.map((item, index) => <Reveal key={item.src} className={`reveal-stagger-${(index % 2) + 1}`}><figure className={`gallery-card gallery-card-${index + 1}`}><Image src={item.src} alt={item.title} width={1600} height={1200} loading="lazy" sizes="(max-width: 767px) 100vw, 50vw" /><span className="gallery-placeholder">Временное изображение</span><figcaption><h3>{item.title}</h3><p>{item.text}</p></figcaption></figure></Reveal>)}
+          {gallery.map((item, index) => <Reveal key={item.src} className={`reveal-stagger-${(index % 2) + 1}`}><figure className={`gallery-card gallery-card-${index + 1}`}><Image src={item.src} alt={item.title} width={1600} height={1200} loading="lazy" sizes="(max-width: 767px) 100vw, 50vw" /><figcaption><h3>{item.title}</h3><p>{item.text}</p></figcaption></figure></Reveal>)}
         </div>
       </section>
 

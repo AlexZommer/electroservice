@@ -12,7 +12,7 @@ export function Header() {
       <a href="#top" className="logo"><span className="logo-mark"><Icon name="bolt" /></span>Электро<span>Сервис</span></a>
       <nav className="hidden items-center gap-8 lg:flex">{links.map(([label, href]) => <a className="nav-link" href={href} key={href}>{label}</a>)}</nav>
       <div className="ml-auto flex items-center gap-3 lg:ml-0">
-        <a className="header-phone" href="tel:+79964140502" aria-label="Позвонить: +7 996 414-05-02">+7 (996) 414-05-02</a>
+        <a className="header-phone" href="tel:+79964140502" aria-label="Позвонить: +7 996 414-05-02"><Icon name="phone" />+7 (996) 414-05-02</a>
         <a className="hidden rounded-full border border-white/15 px-5 py-2.5 text-sm transition hover:border-electric hover:bg-electric/10 xl:block" href="#contact">Получить расчёт</a>
       </div>
       <button className="grid h-10 w-10 place-items-center lg:hidden" onClick={() => setOpen(!open)} aria-label="Открыть меню" aria-expanded={open}><span className={`menu-icon ${open ? "open" : ""}`} /></button>
