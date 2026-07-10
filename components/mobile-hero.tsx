@@ -1,10 +1,15 @@
-import Image from "next/image";
 import { Icon } from "./icons";
 import styles from "./mobile-hero.module.css";
 
 export function MobileHero() {
   return (
     <div className={styles.hero}>
+      <div className={styles.engineeringGraphic} aria-hidden="true">
+        <span />
+        <span />
+        <span />
+      </div>
+
       <div className={styles.intro}>
         <div className={styles.eyebrow}>
           <span className={styles.dot} />
@@ -19,20 +24,6 @@ export function MobileHero() {
           ЭлектроСервис — инженерная команда полного цикла. Проектируем и выполняем электромонтаж для квартир, домов и коммерческих пространств, где важны точность, эстетика и надёжность.
         </p>
       </div>
-
-      <figure className={styles.visual}>
-        <Image
-          src="/images/electrical-wiring.jpg"
-          alt="Аккуратный монтаж электропроводки в современном помещении"
-          fill
-          sizes="(max-width: 639px) calc(100vw - 40px), 1px"
-        />
-        <div className={styles.visualShade} />
-        <figcaption className={styles.visualCaption}>
-          <span>Полный цикл работ</span>
-          <strong>От проекта до сдачи</strong>
-        </figcaption>
-      </figure>
 
       <div className={styles.actions}>
         <a className={styles.primary} href="#estimate">

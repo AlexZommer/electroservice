@@ -2,10 +2,8 @@
   position: relative;
   z-index: 10;
   display: flex;
-  min-height: calc(100svh - 5.5rem);
   flex-direction: column;
-  gap: 24px;
-  padding: 16px 20px 24px;
+  padding: 12px 20px 28px;
   overflow: hidden;
 }
 
@@ -13,6 +11,54 @@
   display: grid;
   min-width: 0;
   gap: 20px;
+}
+
+.engineeringGraphic {
+  position: absolute;
+  z-index: -1;
+  top: 62px;
+  right: -92px;
+  width: 235px;
+  height: 235px;
+  border: 1px solid rgba(75, 157, 255, 0.13);
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.engineeringGraphic::before,
+.engineeringGraphic::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(75, 157, 255, 0.1);
+}
+
+.engineeringGraphic::before {
+  inset: 34px;
+}
+
+.engineeringGraphic::after {
+  inset: 76px;
+  background: rgba(47, 140, 255, 0.08);
+  box-shadow: 0 0 55px rgba(47, 140, 255, 0.18);
+}
+
+.engineeringGraphic span {
+  position: absolute;
+  top: 50%;
+  left: -45px;
+  width: 280px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(78, 161, 255, 0.2), transparent);
+  transform-origin: center;
+}
+
+.engineeringGraphic span:nth-child(2) {
+  transform: rotate(60deg);
+}
+
+.engineeringGraphic span:nth-child(3) {
+  transform: rotate(120deg);
 }
 
 .eyebrow {
@@ -39,11 +85,11 @@
 }
 
 .title {
-  max-width: 390px;
-  font-size: 2.58rem;
+  max-width: 410px;
+  font-size: clamp(2.75rem, 12.2vw, 3.25rem);
   font-weight: 500;
-  line-height: 0.98;
-  letter-spacing: -0.055em;
+  line-height: 0.92;
+  letter-spacing: -0.06em;
 }
 
 .title span {
@@ -55,67 +101,16 @@
 }
 
 .description {
-  max-width: 32rem;
-  color: rgba(255, 255, 255, 0.65);
-  font-size: 1.1875rem;
-  line-height: 1.55;
-}
-
-.visual {
-  position: relative;
-  overflow: hidden;
-  min-height: 190px;
-  width: 100%;
-  min-width: 0;
-  margin: 0;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 24px;
-  background: #0b0f14;
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
-  isolation: isolate;
-}
-
-.visual img {
-  object-fit: cover;
-  object-position: 66% center;
-}
-
-.visualShade {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(4, 7, 11, 0.9), transparent 68%);
-}
-
-.visualCaption {
-  position: absolute;
-  right: 18px;
-  bottom: 16px;
-  left: 18px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  gap: 16px;
-}
-
-.visualCaption span {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.visualCaption strong {
-  max-width: 135px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.35;
-  text-align: right;
+  max-width: 34rem;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 1.0625rem;
+  line-height: 1.65;
 }
 
 .actions {
   display: grid;
   min-width: 0;
+  margin-top: 28px;
   gap: 12px;
 }
 
@@ -160,6 +155,7 @@
   display: flex;
   align-items: flex-start;
   gap: 10px;
+  margin-top: 24px;
   padding-top: 16px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.42);
@@ -171,12 +167,11 @@
 
 @media (max-width: 359px) {
   .hero {
-    gap: 20px;
     padding-inline: 16px;
   }
 
   .title {
-    font-size: 2.4rem;
+    letter-spacing: -0.055em;
   }
 
   .contactActions {

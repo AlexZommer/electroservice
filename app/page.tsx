@@ -44,7 +44,7 @@ export default function Home() {
     <main className="overflow-hidden">
       <Header />
 
-      <section className="hero-grid relative min-h-screen sm:px-8 sm:pt-32 lg:px-12" id="top">
+      <section className="hero-grid relative sm:min-h-screen sm:px-8 sm:pt-32 lg:px-12" id="top">
         <div className="hero-glow" />
         <div className="hero-aurora" aria-hidden="true" />
         <div className="hero-circuit" aria-hidden="true" />
