@@ -50,8 +50,8 @@ export default function Home() {
         <div className="mx-auto flex min-h-[calc(100vh-8rem)] max-w-[1440px] flex-col justify-between">
           <div className="relative z-10 max-w-6xl pt-[7vh]">
             <div className="eyebrow reveal"><span className="status-dot" /> Инженерные решения для частных и коммерческих пространств</div>
-            <h1 className="mt-8 max-w-6xl text-[clamp(3.25rem,7.6vw,8rem)] font-medium leading-[.91] tracking-[-.065em]">
-              Электрика,<br /><span className="text-gradient">которая работает</span><br />на архитектуру
+            <h1 className="mt-8 max-w-6xl text-[clamp(2.75rem,6.45vw,6.8rem)] font-medium leading-[.91] tracking-[-.065em]">
+              Монтаж электрики<br /><span className="text-gradient">любой сложности</span>
             </h1>
             <p className="reveal reveal-delay-2 mt-8 max-w-2xl text-lg leading-relaxed text-white/55 sm:text-xl">
               ЭлектроСервис — инженерная команда полного цикла. Проектируем и выполняем электромонтаж для квартир, домов и коммерческих пространств, где важны точность, эстетика и надёжность.
@@ -72,7 +72,7 @@ export default function Home() {
         <Reveal className="mx-auto max-w-[1440px]"><div className="estimate-shell grid gap-12 lg:grid-cols-[.85fr_1.15fr] lg:items-center">
           <div>
             <div className="section-tag">Предварительный расчёт</div>
-            <h2 className="mt-6 text-[clamp(2.5rem,4.8vw,4.8rem)] font-medium leading-[1.02] tracking-[-.055em]">Получите расчёт стоимости <span className="text-gradient">за 15 минут</span></h2>
+            <h2 className="mt-6 text-[clamp(2.2rem,4.2vw,4.2rem)] font-medium leading-[1.02] tracking-[-.055em]">Получите расчёт стоимости <span className="text-gradient">за 15 минут</span></h2>
             <p className="mt-7 max-w-lg text-base leading-7 text-white/50 sm:text-lg">Ответим в Telegram, уточним детали и бесплатно рассчитаем стоимость.</p>
             <div className="mt-9 flex items-center gap-3 text-sm text-white/40"><span className="status-dot" /> Без обязательств и скрытых условий</div>
           </div>
@@ -111,7 +111,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="cta-strip px-5 py-20 sm:px-8 lg:px-12"><Reveal className="mx-auto max-w-[1440px]"><div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between"><div><p className="section-tag">Начать просто</p><h2 className="mt-5 text-3xl font-medium tracking-tight sm:text-5xl">Узнайте стоимость работ<br className="hidden sm:block" /> для вашего объекта</h2></div><a href="#contact" className="button-primary shrink-0">Получить расчёт <Icon name="arrow" /></a></div></Reveal></section>
+      <section className="cta-strip px-5 py-20 sm:px-8 lg:px-12"><Reveal className="mx-auto max-w-[1440px]"><div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between"><div><p className="section-tag">Начать просто</p><h2 className="mt-5 text-[1.65rem] font-medium tracking-tight sm:text-[2.65rem]">Узнайте стоимость работ<br className="hidden sm:block" /> для вашего объекта</h2></div><a href="#contact" className="button-primary shrink-0">Получить расчёт <Icon name="arrow" /></a></div></Reveal></section>
 
       <FAQ />
 

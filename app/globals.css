@@ -13,7 +13,7 @@ body { min-width: 320px; }
   .section { @apply relative px-5 py-24 sm:px-8 sm:py-32 lg:px-12 lg:py-40; }
   .section-tag { @apply flex items-center gap-3 text-xs font-semibold uppercase tracking-[.2em] text-electric; }
   .section-tag::before { content: ""; @apply h-px w-6 bg-electric; }
-  .section-title { @apply text-[clamp(2.7rem,5vw,5.5rem)] font-medium leading-[.98] tracking-[-.055em]; }
+  .section-title { @apply text-[clamp(2.35rem,4.4vw,4.8rem)] font-medium leading-[.98] tracking-[-.055em]; }
   .button-primary { @apply inline-flex h-14 items-center gap-3 rounded-full px-7 text-sm font-semibold text-white transition duration-300 hover:shadow-glow; background-color: #0968d7; }
   .button-primary:hover { background-color: #075fca; }
   .button-secondary { @apply inline-flex h-14 items-center justify-center rounded-full border border-white/15 px-7 text-sm transition hover:border-white/35 hover:bg-white/5; }
