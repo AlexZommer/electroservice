@@ -13,5 +13,9 @@ export function Icon({ name }: { name: string }) {
   if (name === "check") return <svg {...common}><circle cx="12" cy="12" r="9"/><path d="m8 12 2.5 2.5L16 9"/></svg>;
   if (name === "cable") return <svg {...common}><path d="M7 3v6a5 5 0 0 0 10 0V3M4 3h6M14 3h6M12 14v7"/></svg>;
   if (name === "building") return <svg {...common}><path d="M4 21V3h11v18M15 9h5v12M8 7h3M8 11h3M8 15h3M18 13v4"/></svg>;
+  if (name === "standard") return <svg {...common}><path d="M5 3h14v18H5zM8 7h8M8 11h8M8 15h5"/><path d="m15 16 1.5 1.5L20 14"/></svg>;
+  if (name === "clock") return <svg {...common}><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>;
+  if (name === "clean") return <svg {...common}><path d="m14 3 7 7-5 5-7-7 5-5Z"/><path d="m9 8-6 12h9l4-5M5 16h8"/></svg>;
+  if (name === "consult") return <svg {...common}><path d="M21 12a8 8 0 0 1-9 8 9 9 0 0 1-4 1l1-3a8 8 0 1 1 12-6Z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg>;
   return <svg {...common}><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.66 6.34l1.41-1.41"/></svg>;
 }
