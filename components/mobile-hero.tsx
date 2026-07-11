@@ -1,6 +1,8 @@
 import { Icon } from "./icons";
 import styles from "./mobile-hero.module.css";
 
+const MAX_URL = "https://max.ru/u/f9LHodD0cOL6rJKnS_PQeiK5NAEgGEWFWq3oWksH2F6wIWKAT8I6ZAUQAmk";
+
 export function MobileHero() {
   return (
     <div className={styles.hero}>
@@ -21,20 +23,20 @@ export function MobileHero() {
         </h1>
 
         <p className={styles.description}>
-          ЭлектроСервис — инженерная команда полного цикла. Проектируем и выполняем электромонтаж для квартир, домов и коммерческих пространств, где важны точность, эстетика и надёжность.
+          Проектируем и выполняем электромонтаж для квартир, домов и коммерческих помещений — точно, аккуратно и по договору.
         </p>
       </div>
 
       <div className={styles.actions}>
-        <a className={styles.primary} href="#estimate">
+        <a className={styles.primary} href="#contact">
           Получить расчёт <Icon name="arrow" />
         </a>
         <div className={styles.contactActions}>
-          <a className={styles.secondary} href="tel:+79964140502">
+          <a className={styles.secondary} href="tel:+79537719911">
             <Icon name="phone" /> Позвонить
           </a>
-          <a className={styles.secondary} href="https://t.me/+79964140502" target="_blank" rel="noreferrer">
-            <Icon name="telegram" /> Telegram
+          <a className={styles.secondary} href={MAX_URL} target="_blank" rel="noopener noreferrer">
+            <Icon name="max" /> Написать в MAX
           </a>
         </div>
       </div>

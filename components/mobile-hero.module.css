@@ -181,6 +181,7 @@
   .contactActions {
     grid-template-columns: 1fr;
   }
+
 }
 
 @media (min-width: 640px) {
