@@ -39,10 +39,10 @@ export function MobileHero() {
           <a className={styles.secondary} href={MAX_URL} target="_blank" rel="noopener noreferrer">
             <Icon name="max" /> Написать в MAX
           </a>
+          <a className={styles.secondary} href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">
+            <Icon name="telegram" /> Написать в Telegram
+          </a>
         </div>
-        <a className={styles.telegramLink} href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">
-          Также мы в Telegram →
-        </a>
       </div>
 
       <div className={styles.assurance}>

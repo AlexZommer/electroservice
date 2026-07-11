@@ -125,6 +125,10 @@
   gap: 12px;
 }
 
+.contactActions > :nth-child(3) {
+  grid-column: 1 / -1;
+}
+
 .primary,
 .secondary {
   display: inline-flex;
@@ -155,19 +159,6 @@
   color: #62aaff;
 }
 
-.telegramLink {
-  width: fit-content;
-  margin: -4px auto 0;
-  color: #55aaff;
-  font-size: 14px;
-  line-height: 1.4;
-  transition: color 0.2s ease, opacity 0.2s ease;
-}
-
-.telegramLink:hover {
-  color: #8ac5ff;
-}
-
 .assurance {
   display: flex;
   align-items: flex-start;
@@ -193,6 +184,10 @@
 
   .contactActions {
     grid-template-columns: 1fr;
+  }
+
+  .contactActions > :nth-child(3) {
+    grid-column: auto;
   }
 
 }

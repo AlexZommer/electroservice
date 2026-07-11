@@ -50,8 +50,8 @@ export default function Home() {
                 <div className="hero-contact-buttons">
                   <a className="button-secondary" href={PHONE_HREF}><Icon name="phone" /> Позвонить</a>
                   <a className="button-secondary" href={MAX_URL} target="_blank" rel="noopener noreferrer"><Icon name="max" /> Написать в MAX</a>
+                  <a className="button-secondary" href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer"><Icon name="telegram" /> Написать в Telegram</a>
                 </div>
-                <a className="hero-telegram-link" href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">Также мы в Telegram →</a>
               </div>
             </div>
           </div>
@@ -81,10 +81,10 @@ export default function Home() {
 
       <section className="contact-section relative px-5 py-20 sm:px-8 sm:py-28 lg:px-12" id="contact">
         <div className="orb orb-right" />
-        <Reveal className="mx-auto max-w-[980px] text-center"><div className="section-tag justify-center">Связаться с нами</div><h2 className="section-title mt-6">Рассчитаем стоимость<br className="hidden sm:block" /> <span className="text-gradient">электромонтажа</span></h2><p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-white/50 sm:text-lg">Расскажите о задаче — уточним детали, сроки и подготовим предварительный расчёт.</p><a className="contact-phone whitespace-nowrap" href={PHONE_HREF}>{PHONE_LABEL}</a><div className="contact-actions justify-center"><a className="contact-action" href={PHONE_HREF}><Icon name="phone" /> Позвонить</a><a className="contact-action" href={MAX_URL} target="_blank" rel="noopener noreferrer"><Icon name="max" /> Написать в MAX</a></div></Reveal>
+        <Reveal className="mx-auto max-w-[980px] text-center"><div className="section-tag justify-center">Связаться с нами</div><h2 className="section-title mt-6">Рассчитаем стоимость<br className="hidden sm:block" /> <span className="text-gradient">электромонтажа</span></h2><p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-white/50 sm:text-lg">Расскажите о задаче — уточним детали, сроки и подготовим предварительный расчёт.</p><a className="contact-phone whitespace-nowrap" href={PHONE_HREF}>{PHONE_LABEL}</a><div className="contact-actions justify-center"><a className="contact-action" href={PHONE_HREF}><Icon name="phone" /> Позвонить</a><a className="contact-action" href={MAX_URL} target="_blank" rel="noopener noreferrer"><Icon name="max" /> Написать в MAX</a><a className="contact-action" href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer"><Icon name="telegram" /> Написать в Telegram</a></div></Reveal>
       </section>
 
-      <footer className="border-t border-white/10 px-5 py-8 sm:px-8 lg:px-12"><div className="mx-auto flex max-w-[1440px] flex-col gap-5 text-sm text-white/35 sm:flex-row sm:items-center sm:justify-between"><a href="#top" className="logo text-white"><span className="logo-mark"><Icon name="bolt" /></span>Электро<span>Сервис</span></a><a href={PHONE_HREF} className="whitespace-nowrap text-white/60 hover:text-white">{PHONE_LABEL}</a><a href="#top" className="text-white/60 hover:text-white">Наверх ↑</a></div></footer>
+      <footer className="border-t border-white/10 px-5 py-8 sm:px-8 lg:px-12"><div className="mx-auto flex max-w-[1440px] flex-col gap-5 text-sm text-white/35 sm:flex-row sm:items-center sm:justify-between"><a href="#top" className="logo text-white"><span className="logo-mark"><Icon name="bolt" /></span>Электро<span>Сервис</span></a><div className="footer-contacts"><a href={PHONE_HREF} className="whitespace-nowrap text-white/60 hover:text-white">{PHONE_LABEL}</a><a href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">Telegram</a><a href={MAX_URL} target="_blank" rel="noopener noreferrer">MAX</a></div><a href="#top" className="text-white/60 hover:text-white">Наверх ↑</a></div></footer>
     </main>
   );
 }
