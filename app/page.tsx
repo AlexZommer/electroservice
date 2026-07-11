@@ -43,7 +43,7 @@ export default function Home() {
           <div className="hero-content relative z-10 max-w-6xl pt-[7vh]">
             <div className="eyebrow reveal"><span className="status-dot" /> Инженерные решения для частных и коммерческих пространств</div>
             <h1 className="hero-title mt-8 max-w-6xl text-[clamp(2.75rem,6.45vw,6.8rem)] font-medium leading-[.91] tracking-[-.065em]">Монтаж электрики<br /><span className="text-gradient">любой сложности</span></h1>
-            <p className="hero-description reveal reveal-delay-2 mt-8 max-w-2xl text-lg leading-relaxed text-white/55 sm:text-xl">Проектируем и выполняем электромонтаж для квартир, домов и коммерческих помещений — точно, аккуратно и по договору.</p>
+            <p className="hero-description reveal reveal-delay-2 mt-8 max-w-2xl text-lg leading-relaxed text-white/55 sm:text-xl">ЭлектроСервис — инженерная команда полного цикла. Проектируем и выполняем электромонтаж для квартир, домов и коммерческих пространств, где важны точность, эстетика и надёжность.</p>
             <div className="hero-actions reveal reveal-delay-3 mt-10">
               <div className="hero-contact-options">
                 <a className="button-primary hero-primary" href={PHONE_HREF}><Icon name="phone" /> Позвонить</a>
