@@ -2,6 +2,7 @@ import { Icon } from "./icons";
 import styles from "./mobile-hero.module.css";
 
 const MAX_URL = "https://max.ru/u/f9LHodD0cOL6rJKnS_PQeiK5NAEgGEWFWq3oWksH2F6wIWKAT8I6ZAUQAmk";
+const TELEGRAM_URL = "https://t.me/+79537719911";
 
 export function MobileHero() {
   return (
@@ -39,6 +40,9 @@ export function MobileHero() {
             <Icon name="max" /> Написать в MAX
           </a>
         </div>
+        <a className={styles.telegramLink} href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">
+          Также мы в Telegram →
+        </a>
       </div>
 
       <div className={styles.assurance}>

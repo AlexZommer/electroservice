@@ -7,6 +7,7 @@ import { MobileHero } from "@/components/mobile-hero";
 const PHONE_HREF = "tel:+79537719911";
 const PHONE_LABEL = "+7 (953) 771-99-11";
 const MAX_URL = "https://max.ru/u/f9LHodD0cOL6rJKnS_PQeiK5NAEgGEWFWq3oWksH2F6wIWKAT8I6ZAUQAmk";
+const TELEGRAM_URL = "https://t.me/+79537719911";
 
 const services = [
   { icon: "bolt", n: "01", title: "Электромонтаж под ключ", text: "Проектирование, комплектация и монтаж электрики в квартире, доме или коммерческом помещении." },
@@ -45,8 +46,13 @@ export default function Home() {
             <p className="hero-description reveal reveal-delay-2 mt-8 max-w-2xl text-lg leading-relaxed text-white/55 sm:text-xl">Проектируем и выполняем электромонтаж для квартир, домов и коммерческих помещений — точно, аккуратно и по договору.</p>
             <div className="hero-actions reveal reveal-delay-3 mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
               <a className="button-primary hero-primary" href="#contact">Получить расчёт <Icon name="arrow" /></a>
-              <a className="button-secondary" href={PHONE_HREF}><Icon name="phone" /> Позвонить</a>
-              <a className="button-secondary" href={MAX_URL} target="_blank" rel="noopener noreferrer"><Icon name="max" /> Написать в MAX</a>
+              <div className="hero-contact-options">
+                <div className="hero-contact-buttons">
+                  <a className="button-secondary" href={PHONE_HREF}><Icon name="phone" /> Позвонить</a>
+                  <a className="button-secondary" href={MAX_URL} target="_blank" rel="noopener noreferrer"><Icon name="max" /> Написать в MAX</a>
+                </div>
+                <a className="hero-telegram-link" href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">Также мы в Telegram →</a>
+              </div>
             </div>
           </div>
           <div className="hero-footer relative z-10 flex items-center gap-3 border-t border-white/10 py-7 text-xs uppercase tracking-[.16em] text-white/35"><span className="status-dot" /> Берём на себя весь электромонтаж — от замера до сдачи</div>
