@@ -29,18 +29,15 @@ export function MobileHero() {
       </div>
 
       <div className={styles.actions}>
-        <a className={styles.primary} href="#contact">
-          Получить расчёт <Icon name="arrow" />
+        <a className={styles.primary} href="tel:+79537719911">
+          <Icon name="phone" /> Позвонить
         </a>
         <div className={styles.contactActions}>
-          <a className={styles.secondary} href="tel:+79537719911">
-            <Icon name="phone" /> Позвонить
+          <a className={styles.secondary} href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">
+            <Icon name="telegram" /> Написать в Telegram
           </a>
           <a className={styles.secondary} href={MAX_URL} target="_blank" rel="noopener noreferrer">
             <Icon name="max" /> Написать в MAX
-          </a>
-          <a className={styles.secondary} href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer">
-            <Icon name="telegram" /> Написать в Telegram
           </a>
         </div>
       </div>

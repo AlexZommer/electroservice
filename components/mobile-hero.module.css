@@ -125,10 +125,6 @@
   gap: 12px;
 }
 
-.contactActions > :nth-child(3) {
-  grid-column: 1 / -1;
-}
-
 .primary,
 .secondary {
   display: inline-flex;
@@ -139,6 +135,7 @@
   min-width: 0;
   border-radius: 999px;
   font-size: 14px;
+  transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
 }
 
 .primary {
@@ -153,10 +150,22 @@
   background: rgba(255, 255, 255, 0.02);
 }
 
+.secondary:hover {
+  border-color: rgba(255, 255, 255, 0.32);
+  background: rgba(255, 255, 255, 0.06);
+}
+
 .secondary svg {
   width: 18px;
   height: 18px;
   color: #62aaff;
+}
+
+@media (max-width: 430px) {
+  .contactActions .secondary {
+    gap: 7px;
+    font-size: 12px;
+  }
 }
 
 .assurance {
@@ -183,12 +192,19 @@
   }
 
   .contactActions {
-    grid-template-columns: 1fr;
+    gap: 8px;
   }
 
-  .contactActions > :nth-child(3) {
-    grid-column: auto;
+  .contactActions .secondary {
+    gap: 5px;
+    font-size: 11px;
   }
+
+  .contactActions .secondary svg {
+    width: 16px;
+    height: 16px;
+  }
+
 
 }
 

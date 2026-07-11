@@ -44,13 +44,12 @@ export default function Home() {
             <div className="eyebrow reveal"><span className="status-dot" /> Инженерные решения для частных и коммерческих пространств</div>
             <h1 className="hero-title mt-8 max-w-6xl text-[clamp(2.75rem,6.45vw,6.8rem)] font-medium leading-[.91] tracking-[-.065em]">Монтаж электрики<br /><span className="text-gradient">любой сложности</span></h1>
             <p className="hero-description reveal reveal-delay-2 mt-8 max-w-2xl text-lg leading-relaxed text-white/55 sm:text-xl">Проектируем и выполняем электромонтаж для квартир, домов и коммерческих помещений — точно, аккуратно и по договору.</p>
-            <div className="hero-actions reveal reveal-delay-3 mt-10 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-              <a className="button-primary hero-primary" href="#contact">Получить расчёт <Icon name="arrow" /></a>
+            <div className="hero-actions reveal reveal-delay-3 mt-10">
               <div className="hero-contact-options">
+                <a className="button-primary hero-primary" href={PHONE_HREF}><Icon name="phone" /> Позвонить</a>
                 <div className="hero-contact-buttons">
-                  <a className="button-secondary" href={PHONE_HREF}><Icon name="phone" /> Позвонить</a>
-                  <a className="button-secondary" href={MAX_URL} target="_blank" rel="noopener noreferrer"><Icon name="max" /> Написать в MAX</a>
                   <a className="button-secondary" href={TELEGRAM_URL} target="_blank" rel="noopener noreferrer"><Icon name="telegram" /> Написать в Telegram</a>
+                  <a className="button-secondary" href={MAX_URL} target="_blank" rel="noopener noreferrer"><Icon name="max" /> Написать в MAX</a>
                 </div>
               </div>
             </div>
